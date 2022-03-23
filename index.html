@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
+  <script src='js/scripts.js'></script>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+  <link rel='stylesheet' href='css/styles.css' type='text/css'>
+  <title>Marketplace</title>
+</head>
+<body>
+  <form id="payment-info">
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <br>
+    <label for="address">Shipping Address:</label>
+    <input type="text" id="address">
+    <br>
+    <label for="item">Ice Cream:</label>
+    <br>
+    <label>
+      <input type="radio" name="flavor" value="chocolate" checked>
+      Chocolate
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="flavor" value="vanilla">
+      Vanilla
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="flavor" value="strawberry">
+      Strawberry
+    </label>
+    <br><br>
+    <label for="date">Arrival Date:</label>
+    <input type="date" id="date">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <br><br><br>
+  <div id="receipt" class="hidden">
+    <p>Thanks for your purchase, <span id="name-receipt"></span>!</p>
+    <p>You ordered: <span id="item-receipt"></span></p>
+    <p>It will arrive on: <span id="date-receipt"></span></p>
+  </div>
+</body>
+</html>
